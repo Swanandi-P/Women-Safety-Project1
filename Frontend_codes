@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeGuard - Voice & Triggers</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #fdf6ff; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        .back-link { text-decoration: none; color: #7b2cbf; font-weight: bold; }
+        .visualizer {
+            height: 150px;
+            background: #f2e9ff;
+            margin: 20px 0;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #e0aaff;
+        }
+        .trigger-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        .badge {
+            background: #7b2cbf;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+        <h1>Voice & Trigger Detection</h1>
+        
+        <div class="visualizer">
+            <p style="color: #7b2cbf;">Audio Waveform Visualization Active</p>
+        </div>
 
+        <div class="trigger-card">
+            <h3>Active Trigger Words</h3>
+            <p>The device is currently listening for:</p>
+            <span class="badge">Help</span>
+            <span class="badge">Stop</span>
+            <span class="badge">Emergency</span>
+        </div>
+
+        <h3>Detection History</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li style="background: #fff; padding: 15px; margin-bottom: 10px; border-radius: 8px;">
+                <strong>Keyword "Help" detected</strong><br>
+                <small>Location: Sector 45 | Time: 10:45 PM</small>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
